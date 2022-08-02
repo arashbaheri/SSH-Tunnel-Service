@@ -1,0 +1,11 @@
+[Unit]
+Description=Tunnel Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/tunnel/tunnel.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
