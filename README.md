@@ -28,11 +28,12 @@ cat id_rsa.pub >> authorized_keys
 exit
 ```
 
-# 6.Copy tunnel.sh script to /opt/tunnel/ using :
+# 6.Copy tunnel.sh script to /opt/tunnel/ using and modify it with your vps credential:
 ```
 sudo mkdir /opt/tunnel
 sudo mv tunnel.sh /opt/tunnel
 sudo chmod 755 /opt/tunnel/tunnel.sh
+sudo vim /opt/tunnel/tunnel.sh
 ```
 
 # 7.Create your tunnel service using :
