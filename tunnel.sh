@@ -9,4 +9,4 @@ fi
 
 #start
 export SHELL=/bin/bash
-ssh -D 8080 -fCqNT -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes {REMOTE_SERVER_USERNAME}@{REMOTE_SERVER_IP}
+ssh -D 8080 -fgCqNT -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes {REMOTE_SERVER_USERNAME}@{REMOTE_SERVER_IP}
