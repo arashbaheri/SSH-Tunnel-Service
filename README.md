@@ -20,7 +20,7 @@ ssh {REMOTE_SERVER_USERNAME}@{REMOTE_SERVER_IP}
 ```
 mkdir .ssh
 touch .ssh/authorized_keys
-cat id_rsa.pub >> authorized_keys
+cat id_rsa.pub >> .ssh/authorized_keys
 ```
 
 # 5.Logout from REMOTE_SERVER using :
